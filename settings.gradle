@@ -1,0 +1,6 @@
+include ':java_learn'
+include ':kotlin_learn'
+include ':android_learn:fragment_learn'
+include ':android_learn'
+include ':app'
+rootProject.name = "ori_learn"
