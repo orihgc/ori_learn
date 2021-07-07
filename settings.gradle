@@ -1,6 +1,10 @@
+include ':android_learn:dialog_learn'
+include ':android_learn:jetpack_learn'
+include ':android_learn:animation_learn'
 include ':java_learn'
 include ':kotlin_learn'
 include ':android_learn:fragment_learn'
 include ':android_learn'
 include ':app'
 rootProject.name = "ori_learn"
+include ':java_learn:design_pattern'
