@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">animation_learn</string>
+    <string name="property_animation">属性动画</string>
 </resources>
