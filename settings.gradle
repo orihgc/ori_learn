@@ -9,3 +9,4 @@ include ':app'
 rootProject.name = "ori_learn"
 include ':java_learn:design_pattern'
 include ':kotlin_learn:coroutines_learn'
+include ':kotlin_learn:coroutines_base_learn'
