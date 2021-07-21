@@ -20,22 +20,40 @@ sealed class CoroutineState {
 
     private var disposableList: RecursiveList<Disposable> = RecursiveList.Nil
 
+    /**
+     *
+     * */
     fun from(state: CoroutineState): CoroutineState {
         this.disposableList = state.disposableList
         return this
     }
 
+    /**
+     * with添加一个disposable
+     * */
     fun with(disposable: Disposable): CoroutineState {
         this.disposableList = RecursiveList.Cons(disposable, this.disposableList)
         return this
     }
 
+    /**
+     * 删除一个disposable
+     * */
     fun withOut(disposable: Disposable): CoroutineState {
         this.disposableList = this.disposableList.remove(disposable)
         return this
     }
 
+    /**
+     * 清空disposableList
+     * */
     fun clear() {
         this.disposableList = RecursiveList.Nil
+    }
+
+    fun <T> notifyCompletion(result: Result<T>) {
+        this.disposableList.loopOn<CompletionHandlerDisposable<T>> {
+            it.onComplete(result)
+        }
     }
 }

@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="ori_learn.android_learn.animation_learn" target="11" />
+      <module name="ori_learn.android_learn.custom_view_learn" target="11" />
       <module name="ori_learn.android_learn.dialog_learn" target="11" />
       <module name="ori_learn.android_learn.fragment_learn" target="11" />
       <module name="ori_learn.android_learn.jetpack_learn" target="11" />

@@ -21,20 +21,28 @@ suspend fun delay(time: Long, unit: TimeUnit = TimeUnit.MILLISECONDS) {
 }
 
 fun main() {
-    val suspend = suspend {
+//    val suspend = suspend {
+//        delay(5000)
+//        5
+//    }.createCoroutine(object : Continuation<Int> {
+//        override val context: CoroutineContext
+//            get() = EmptyCoroutineContext
+//
+//        override fun resumeWith(result: Result<Int>) {
+//            println("$result")
+//        }
+//
+//    })
+//    thread {
+//        Thread.sleep(6000)
+//    }
+//    suspend.resume(Unit)
+//
+    launch {
         delay(5000)
-        5
-    }.createCoroutine(object : Continuation<Int> {
-        override val context: CoroutineContext
-            get() = EmptyCoroutineContext
-
-        override fun resumeWith(result: Result<Int>) {
-            println("$result")
-        }
-
-    })
+        print("hello")
+    }
     thread {
         Thread.sleep(6000)
     }
-    suspend.resume(Unit)
 }
