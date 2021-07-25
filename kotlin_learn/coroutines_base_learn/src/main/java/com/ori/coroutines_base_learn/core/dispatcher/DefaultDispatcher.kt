@@ -1,0 +1,24 @@
+package com.ori.coroutines_base_learn.core.dispatcher
+
+import java.util.concurrent.Executors
+import java.util.concurrent.atomic.AtomicInteger
+
+object DefaultDispatcher : Dispatcher {
+
+    private val threadGroup = ThreadGroup("DefaultDispatcher")
+
+    private val threadIndex = AtomicInteger(0)
+
+    private val executor =
+        Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() + 1) { runnable ->
+            Thread(
+                threadGroup,
+                runnable,
+                "${threadGroup.name}-worker-${threadIndex.getAndIncrement()}"
+            ).apply { isDaemon = true }
+        }
+
+    override fun dispatch(block: () -> Unit) {
+        executor.submit(block)
+    }
+}

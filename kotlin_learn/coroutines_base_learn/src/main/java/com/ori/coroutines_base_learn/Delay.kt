@@ -1,5 +1,7 @@
 package com.ori.coroutines_base_learn
 
+import com.ori.coroutines_base_learn.core.cancel.suspendCancellableCoroutine
+import com.ori.coroutines_base_learn.core.dispatcher.Dispatchers
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
 import kotlin.concurrent.thread
@@ -15,34 +17,16 @@ suspend fun delay(time: Long, unit: TimeUnit = TimeUnit.MILLISECONDS) {
         return
     }
 
+    suspendCancellableCoroutine<Unit> { continuation ->
+        val future = executor.schedule({ continuation.resume(Unit) }, time, unit)
+        continuation.invokeOnCancellation { future.cancel(true) }
+    }
+
+    /**/
+    /*
     suspendCoroutine<Unit> { continuation ->
         executor.schedule({ continuation.resume(Unit) }, time, unit)
     }
+    */
 }
 
-fun main() {
-//    val suspend = suspend {
-//        delay(5000)
-//        5
-//    }.createCoroutine(object : Continuation<Int> {
-//        override val context: CoroutineContext
-//            get() = EmptyCoroutineContext
-//
-//        override fun resumeWith(result: Result<Int>) {
-//            println("$result")
-//        }
-//
-//    })
-//    thread {
-//        Thread.sleep(6000)
-//    }
-//    suspend.resume(Unit)
-//
-    launch {
-        delay(5000)
-        print("hello")
-    }
-    thread {
-        Thread.sleep(6000)
-    }
-}

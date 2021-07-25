@@ -56,4 +56,10 @@ sealed class CoroutineState {
             it.onComplete(result)
         }
     }
+
+    fun notifyCancellation() {
+        disposableList.loopOn<CancellationHandlerDisposable> {
+            it.onCancel()
+        }
+    }
 }
