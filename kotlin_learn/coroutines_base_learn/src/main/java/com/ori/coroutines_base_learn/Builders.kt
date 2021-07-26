@@ -30,6 +30,8 @@ fun <T> CoroutineScope.async(context: CoroutineContext = Dispatchers.Default, bl
  * */
 fun CoroutineScope.newCoroutineContext(context: CoroutineContext): CoroutineContext {
     val combined = context + CoroutineName("@coroutine#${coroutineIndex.getAndIncrement()}")
-    /**如果调用者没有在协程上下文中主动配置调度器或者拦截器，就添加一个默认的调度器到协程上下文中*/
+    /**
+     * 如果调用者没有在协程上下文中主动配置调度器或者拦截器，就添加一个默认的调度器到协程上下文中
+     * */
     return if (combined !== Dispatchers.Default && combined[ContinuationInterceptor] == null) combined + Dispatchers.Default else combined
 }

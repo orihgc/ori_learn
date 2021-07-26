@@ -51,8 +51,6 @@ abstract class AbstractCoroutine<T>(context: CoroutineContext) : Job, Continuati
         }
 
 
-
-
     protected open fun handleJobException(e: Throwable) = false
 
     protected open fun handleChildException(e: Throwable): Boolean {
@@ -73,22 +71,7 @@ abstract class AbstractCoroutine<T>(context: CoroutineContext) : Job, Continuati
     }
 
 
-    override fun cancel() {
-        val newState = state.getAndUpdate {
-            when (it) {
-                is CoroutineState.InComplete -> {
-                    CoroutineState.Cancelling().from(it)
-                }
-                is CoroutineState.Cancelling, is CoroutineState.Complete<*> -> it
-            }
-        }
 
-        takeIf { newState is CoroutineState.InComplete }.let {
-            newState.notifyCancellation()
-            newState.clear()
-        }
-
-    }
 
     override suspend fun join() {
         when (state.get()) {
@@ -112,11 +95,40 @@ abstract class AbstractCoroutine<T>(context: CoroutineContext) : Job, Continuati
     doOnCompleted { continuation.resume(Unit) }
 }*/
 
+    override fun cancel() {
+        val newState = state.getAndUpdate {
+            when (it) {
+                /**
+                 * 将协程的状态从InComplete转为Cancelling
+                 * 将回调队列复制到Cancelling中
+                 * */
+                is CoroutineState.InComplete -> {
+                    CoroutineState.Cancelling().from(it)
+                }
+                is CoroutineState.Cancelling, is CoroutineState.Complete<*> -> it
+            }
+        }
+        /**
+         * 这里的newState返回的旧的状态，
+         * */
+        takeIf { newState is CoroutineState.InComplete }.let {
+            /**移除旧状态下的所有回调*/
+            newState.notifyCancellation()
+            /**清空回调列表*/
+            newState.clear()
+        }
+
+    }
+
+    /**
+     *
+     * */
     override fun invokeOnCancel(onCancel: OnCancel): Disposable {
         val disposable = CancellationHandlerDisposable(this, onCancel)
         val newState = state.updateAndGet {
             when (it) {
                 is CoroutineState.InComplete -> {
+                    /**复制状态，注册新的回调*/
                     CoroutineState.InComplete().from(it).with(disposable)
                 }
                 is CoroutineState.Cancelling, is CoroutineState.Complete<*> -> {

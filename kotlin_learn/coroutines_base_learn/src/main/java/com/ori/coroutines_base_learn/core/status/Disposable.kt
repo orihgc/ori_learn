@@ -16,6 +16,9 @@ class CompletionHandlerDisposable<T>(val job: Job, val onComplete: OnCompleteT<T
     }
 }
 
+/**
+ * 移除回调
+ * */
 class CancellationHandlerDisposable(val job: Job, val onCancel: OnCancel) : Disposable {
     override fun dispose() {
         job.remove(this)
