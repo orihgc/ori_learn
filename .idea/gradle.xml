@@ -21,11 +21,13 @@
             <option value="$PROJECT_DIR$/java_learn" />
             <option value="$PROJECT_DIR$/java_learn/design_pattern" />
             <option value="$PROJECT_DIR$/kotlin_learn" />
-            <option value="$PROJECT_DIR$/kotlin_learn/coroutines_base_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn" />
+            <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_framework" />
+            <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_practice" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

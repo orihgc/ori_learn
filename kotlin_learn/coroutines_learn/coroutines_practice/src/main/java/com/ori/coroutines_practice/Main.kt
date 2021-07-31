@@ -1,20 +1,9 @@
-package com.example.coroutines_learn
+package com.ori.coroutines_practice
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        btn_hello.setOnClickListener {
-            start()
-        }
-    }
-
+class Main {
     /**
      * 运行结果:
      *   runBlocking: 启动一个协程
@@ -118,7 +107,6 @@ class MainActivity : AppCompatActivity() {
                 //网络请求...
                 "请求结果"
             }
-            btn_hello.text = result
         }
 
         /**
@@ -284,30 +272,31 @@ class MainActivity : AppCompatActivity() {
          * D/scope: 5--------- CoroutineName(coroutineScope)
          * D/scope: 6--------- CoroutineName(scope1)
          * */
-        val coroutineScope = CoroutineScope(SupervisorJob() +CoroutineName("coroutineScope"))
+        val coroutineScope = CoroutineScope(SupervisorJob() + CoroutineName("coroutineScope"))
         GlobalScope.launch(Dispatchers.Main + CoroutineName("scope1") + exceptionHandler) {
-            with(coroutineScope){
+            with(coroutineScope) {
                 /**
                  * 子协程scope2的异常没有导致coroutineScope作用域下的协程取消退出
                  * */
                 val scope2 = launch(CoroutineName("scope2") + exceptionHandler) {
-                    Log.d("scope", "1--------- ${coroutineContext[CoroutineName]}")
+                    android.util.Log.d("scope", "1--------- ${coroutineContext[CoroutineName]}")
                     throw  NullPointerException("空指针")
                 }
+
                 /**
                  * 由于调用了coroutineScope.cancel()，所以没有输出3
                  * */
                 val scope3 = launch(CoroutineName("scope3") + exceptionHandler) {
                     scope2.join()
-                    Log.d("scope", "2--------- ${coroutineContext[CoroutineName]}")
+                    android.util.Log.d("scope", "2--------- ${coroutineContext[CoroutineName]}")
                     delay(2000)
-                    Log.d("scope", "3--------- ${coroutineContext[CoroutineName]}")
+                    android.util.Log.d("scope", "3--------- ${coroutineContext[CoroutineName]}")
                 }
                 scope2.join()
-                Log.d("scope", "4--------- ${coroutineContext[CoroutineName]}")
+                android.util.Log.d("scope", "4--------- ${coroutineContext[CoroutineName]}")
                 coroutineScope.cancel()
                 scope3.join()
-                Log.d("scope", "5--------- ${coroutineContext[CoroutineName]}")
+                android.util.Log.d("scope", "5--------- ${coroutineContext[CoroutineName]}")
             }
             Log.d("scope", "6--------- ${coroutineContext[CoroutineName]}")
         }
@@ -319,6 +308,4 @@ class MainActivity : AppCompatActivity() {
          * 在协程内部挂起函数的调用处就是挂起点，如果挂起点出现异步调用，那么当前协程就被挂起，直到对应的Continuation通过调用resumeWith函数才会恢复协程的执行，同时返回Result<T>类型的成功或者失败的结果。
          * */
     }
-
-
 }

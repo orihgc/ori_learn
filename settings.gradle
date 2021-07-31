@@ -1,3 +1,5 @@
+include ':kotlin_learn:coroutines_learn:coroutines_practice'
+include ':kotlin_learn:coroutines_learn:coroutines_framework'
 include ':android_learn:dialog_learn'
 include ':android_learn:jetpack_learn'
 include ':android_learn:animation_learn'
@@ -9,5 +11,5 @@ include ':app'
 rootProject.name = "ori_learn"
 include ':java_learn:design_pattern'
 include ':kotlin_learn:coroutines_learn'
-include ':kotlin_learn:coroutines_base_learn'
+include ':kotlin_learn:coroutines_learn'
 include ':android_learn:custom_view_learn'
