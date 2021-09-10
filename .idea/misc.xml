@@ -5,6 +5,8 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.2453125" />
         <entry key="android_learn/image_learn/src/main/res/layout/activity_main.xml" value="0.3302083333333333" />
+        <entry key="android_learn/notification_learn/src/main/res/layout/activity_main.xml" value="0.20364583333333333" />
+        <entry key="android_learn/notification_learn/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16041666666666668" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/item_page.xml" value="0.23020833333333332" />
       </map>

@@ -18,11 +18,13 @@
             <option value="$PROJECT_DIR$/android_learn/fragment_learn" />
             <option value="$PROJECT_DIR$/android_learn/image_learn" />
             <option value="$PROJECT_DIR$/android_learn/jetpack_learn" />
+            <option value="$PROJECT_DIR$/android_learn/notification_learn" />
             <option value="$PROJECT_DIR$/android_learn/view_pager_learn" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/java_learn" />
             <option value="$PROJECT_DIR$/java_learn/design_pattern" />
             <option value="$PROJECT_DIR$/kotlin_learn" />
+            <option value="$PROJECT_DIR$/kotlin_learn/base_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_framework" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_practice" />
