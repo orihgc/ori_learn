@@ -3,11 +3,12 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="ori_learn.android_learn.animation_learn" target="1.8" />
+      <module name="ori_learn.android_learn.animation_learn.motion_layout_learn" target="1.8" />
+      <module name="ori_learn.android_learn.animation_learn.motion_learn" target="1.8" />
       <module name="ori_learn.android_learn.dialog_learn" target="1.8" />
       <module name="ori_learn.android_learn.fragment_learn" target="1.8" />
       <module name="ori_learn.android_learn.jetpack_learn" target="1.8" />
       <module name="ori_learn.app" target="1.8" />
-      <module name="ori_learn.kotlin_learn.coroutines_learn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
