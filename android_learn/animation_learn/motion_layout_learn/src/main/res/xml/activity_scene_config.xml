@@ -46,21 +46,6 @@
 
     <Transition
         app:constraintSetEnd="@id/end"
-        app:constraintSetStart="@+id/start"
-        app:duration="2000">
-
-        <OnClick
-            app:clickAction="toggle"
-            app:targetId="@id/v1" />
-
-
-        <KeyFrameSet>
-            <KeyPosition
-                android:translationY="50dp"
-                app:framePosition="70"
- />
-
-        </KeyFrameSet>
-
+        app:constraintSetStart="@+id/start">
     </Transition>
 </MotionScene>

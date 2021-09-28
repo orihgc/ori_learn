@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/android_learn/fragment_learn" />
             <option value="$PROJECT_DIR$/android_learn/image_learn" />
             <option value="$PROJECT_DIR$/android_learn/jetpack_learn" />
+            <option value="$PROJECT_DIR$/android_learn/location_learn" />
             <option value="$PROJECT_DIR$/android_learn/notification_learn" />
             <option value="$PROJECT_DIR$/android_learn/recycler_view_learn" />
             <option value="$PROJECT_DIR$/android_learn/scroll_view_learn" />
@@ -32,6 +33,7 @@
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_framework" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_practice" />
+            <option value="$PROJECT_DIR$/kotlin_learn/okhttp_learn" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
