@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">young-lab</string>
+    <string name="activity_label_todo_list">Todo List</string>
+</resources>

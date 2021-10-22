@@ -25,6 +25,10 @@
             <option value="$PROJECT_DIR$/android_learn/recycler_view_learn" />
             <option value="$PROJECT_DIR$/android_learn/scroll_view_learn" />
             <option value="$PROJECT_DIR$/android_learn/view_pager_learn" />
+            <option value="$PROJECT_DIR$/architecture" />
+            <option value="$PROJECT_DIR$/architecture/demo-mvi-orientation" />
+            <option value="$PROJECT_DIR$/architecture/demo-mvp" />
+            <option value="$PROJECT_DIR$/architecture/demo-mvvm" />
             <option value="$PROJECT_DIR$/java_learn" />
             <option value="$PROJECT_DIR$/java_learn/design_pattern" />
             <option value="$PROJECT_DIR$/kotlin_learn" />

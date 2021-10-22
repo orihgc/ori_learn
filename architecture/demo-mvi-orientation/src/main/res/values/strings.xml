@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YoungLabHD</string>
+    <string name="load_more_failed_and_retry">上拉加载失败,点击重试</string>
+    <string name="load_more_tip">上拉加载更多</string>
+    <string name="load_more_end">没有更多内容了</string>
+    <string name="load_failed">加载失败</string>
+</resources>

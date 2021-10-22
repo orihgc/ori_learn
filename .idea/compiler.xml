@@ -15,6 +15,9 @@
       <module name="ori_learn.android_learn.scroll_view_learn" target="1.8" />
       <module name="ori_learn.android_learn.view_pager_learn" target="1.8" />
       <module name="ori_learn.app" target="1.8" />
+      <module name="ori_learn.architecture.demo-mvi-orientation" target="1.8" />
+      <module name="ori_learn.architecture.demo-mvp" target="1.8" />
+      <module name="ori_learn.architecture.demo-mvvm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
