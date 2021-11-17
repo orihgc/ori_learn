@@ -12,6 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android_learn" />
+            <option value="$PROJECT_DIR$/android_learn/aidl_learn" />
+            <option value="$PROJECT_DIR$/android_learn/aidl_learn/client" />
+            <option value="$PROJECT_DIR$/android_learn/aidl_learn/server" />
             <option value="$PROJECT_DIR$/android_learn/animation_learn" />
             <option value="$PROJECT_DIR$/android_learn/animation_learn/motion_layout_learn" />
             <option value="$PROJECT_DIR$/android_learn/animation_learn/motion_learn" />
@@ -37,6 +40,7 @@
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_framework" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_practice" />
             <option value="$PROJECT_DIR$/kotlin_learn/okhttp_learn" />
+            <option value="$PROJECT_DIR$/kotlin_learn/retrofit_learn" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

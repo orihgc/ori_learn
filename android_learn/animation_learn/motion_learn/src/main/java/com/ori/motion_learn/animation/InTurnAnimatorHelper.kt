@@ -7,7 +7,7 @@ import android.animation.ValueAnimator
 import android.view.View
 import androidx.dynamicanimation.animation.SpringAnimation
 import com.legend.common.utility.animation.config.*
-import com.ori.motion_learn.dp2px
+import com.example.motion_learn.dp2px
 
 class InTurnAnimatorHelper(private val totalInterval: Long, private val isPositive: Boolean) {
 

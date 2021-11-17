@@ -7,6 +7,7 @@
     tools:context=".PropertyAnimationActivity">
 
     <LinearLayout
+        android:id="@+id/ll_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -18,37 +19,44 @@
 
         <ImageView
             android:id="@+id/image_view1"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_launcher" />
 
-        <ImageView
-            android:id="@+id/image_view2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:src="@mipmap/ic_launcher" />
 
-        <ImageView
-            android:id="@+id/image_view3"
+        <Button
+            android:id="@+id/btn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:src="@mipmap/ic_launcher" />
+            android:layout_height="wrap_content"/>
 
-        <ImageView
-            android:id="@+id/image_view4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:src="@mipmap/ic_launcher" />
+<!--        <ImageView-->
+<!--            android:id="@+id/image_view2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:src="@mipmap/ic_launcher" />-->
 
-        <ImageView
-            android:id="@+id/image_view5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:src="@mipmap/ic_launcher" />
+<!--        <ImageView-->
+<!--            android:id="@+id/image_view3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:src="@mipmap/ic_launcher" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image_view4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:src="@mipmap/ic_launcher" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image_view5"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:src="@mipmap/ic_launcher" />-->
 
     </LinearLayout>
 

@@ -9,7 +9,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.fragment.app.Fragment
-import com.ori.fragment_learn.R
+import com.example.fragment_learn.R
 
 
 class ItemsListFragment : Fragment() {

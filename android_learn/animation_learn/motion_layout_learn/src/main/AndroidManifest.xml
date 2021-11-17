@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ori.motion_layout_learn">
+    package="com.example.motion_layout_learn">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ori_learn">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.motion_layout_learn.com.ori.motion_layout_learn.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             >

@@ -1,19 +1,9 @@
 package com.ori.motion_learn
 
-import android.animation.Animator
-import android.animation.AnimatorSet
-import android.animation.ObjectAnimator
-import android.animation.ValueAnimator
 import android.content.res.Resources
-import android.icu.number.Scale
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.TypedValue
-import android.view.View
-import android.widget.Toast
-import androidx.core.view.isVisible
-import androidx.transition.ChangeBounds
-import androidx.transition.TransitionManager
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
 import java.util.*

@@ -1,6 +1,6 @@
-package com.ori.coroutines_base_learn.core.cancel
+package com.example.coroutines_base_learn.core.cancel
 
-import com.ori.coroutines_base_learn.OnCancel
+import com.example.coroutines_base_learn.OnCancel
 
 
 sealed class CancelState {

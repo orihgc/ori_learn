@@ -1,8 +1,8 @@
-package com.ori.coroutines_base_learn.core.cancel
+package com.example.coroutines_base_learn.core.cancel
 
-import com.ori.coroutines_base_learn.CancellationException
-import com.ori.coroutines_base_learn.Job
-import com.ori.coroutines_base_learn.OnCancel
+import com.example.coroutines_base_learn.CancellationException
+import com.example.coroutines_base_learn.Job
+import com.example.coroutines_base_learn.OnCancel
 import java.util.concurrent.atomic.AtomicReference
 import kotlin.coroutines.Continuation
 import kotlin.coroutines.intrinsics.COROUTINE_SUSPENDED

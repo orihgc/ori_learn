@@ -1,8 +1,8 @@
-package com.ori.coroutines_base_learn.core.coroutine
+package com.example.coroutines_base_learn.core.coroutine
 
-import com.ori.coroutines_base_learn.Job
-import com.ori.coroutines_base_learn.Deferred
-import com.ori.coroutines_base_learn.core.status.CoroutineState
+import com.example.coroutines_base_learn.Job
+import com.example.coroutines_base_learn.Deferred
+import com.example.coroutines_base_learn.core.status.CoroutineState
 import java.util.concurrent.CancellationException
 import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.coroutineContext

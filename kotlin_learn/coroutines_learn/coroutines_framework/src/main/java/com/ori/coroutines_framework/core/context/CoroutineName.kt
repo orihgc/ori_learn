@@ -1,4 +1,4 @@
-package com.ori.coroutines_base_learn.core.context
+package com.example.coroutines_base_learn.core.context
 
 import kotlin.coroutines.CoroutineContext
 /**

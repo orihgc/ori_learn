@@ -5,13 +5,9 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
-import android.view.animation.AnimationSet
-import androidx.core.view.isVisible
 import androidx.transition.Transition
 import androidx.transition.TransitionManager
 import androidx.transition.TransitionValues
-import kotlinx.android.synthetic.main.activity_main.*
 
 class CustomTransition(private val viewGroup: ViewGroup) : Transition() {
 

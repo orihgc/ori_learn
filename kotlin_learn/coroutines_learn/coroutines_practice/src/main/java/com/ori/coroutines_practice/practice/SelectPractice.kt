@@ -2,7 +2,6 @@ package com.ori.coroutines_practice.practice
 
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.channels.onReceiveOrNull
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.selects.select
 import kotlin.random.Random

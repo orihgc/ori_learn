@@ -3,6 +3,9 @@ package com.ori.design_pattern.strutural_type.proxy;
 import com.ori.design_pattern.strutural_type.proxy.original.MetricsCollector;
 import com.ori.design_pattern.strutural_type.proxy.original.RequestInfoHelper;
 import com.ori.design_pattern.strutural_type.proxy.original.UserVo;
+import com.ori.design_pattern.strutural_type.proxy.original.MetricsCollector;
+import com.ori.design_pattern.strutural_type.proxy.original.RequestInfoHelper;
+import com.ori.design_pattern.strutural_type.proxy.original.UserVo;
 
 /**
  * 继承代理

@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/fragmentItemsList"
-        android:name="com.ori.fragment_learn.master.ItemsListFragment"
+        android:name="com.example.fragment_learn.master.ItemsListFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

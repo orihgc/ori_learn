@@ -2,7 +2,7 @@ package com.ori.fragment_learn.master
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ori.fragment_learn.R
+import com.example.fragment_learn.R
 
 class ItemDetailActivity : AppCompatActivity() {
     var fragmentItemDetail: ItemDetailFragment? = null

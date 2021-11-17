@@ -1,4 +1,4 @@
-package com.ori.coroutines_base_learn.core.exception
+package com.example.coroutines_base_learn.core.exception
 
 import kotlin.coroutines.AbstractCoroutineContextElement
 import kotlin.coroutines.CoroutineContext

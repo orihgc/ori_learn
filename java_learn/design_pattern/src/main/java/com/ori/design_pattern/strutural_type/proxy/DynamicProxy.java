@@ -3,6 +3,9 @@ package com.ori.design_pattern.strutural_type.proxy;
 import com.ori.design_pattern.strutural_type.proxy.original.IUserController;
 import com.ori.design_pattern.strutural_type.proxy.original.MetricsCollector;
 import com.ori.design_pattern.strutural_type.proxy.original.RequestInfoHelper;
+import com.ori.design_pattern.strutural_type.proxy.original.IUserController;
+import com.ori.design_pattern.strutural_type.proxy.original.MetricsCollector;
+import com.ori.design_pattern.strutural_type.proxy.original.RequestInfoHelper;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

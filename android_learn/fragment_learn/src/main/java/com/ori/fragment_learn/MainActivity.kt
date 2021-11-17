@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import com.ori.fragment_learn.fragment.Fragment1
-import com.ori.fragment_learn.master.ItemsListActivity
+import com.example.fragment_learn.fragment.Fragment1
+import com.example.fragment_learn.master.ItemsListActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

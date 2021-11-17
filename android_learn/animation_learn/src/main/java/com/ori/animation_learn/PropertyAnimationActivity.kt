@@ -3,30 +3,34 @@ package com.ori.animation_learn
 import android.animation.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.animation.*
 import android.widget.ImageView
+import androidx.core.view.isVisible
+import kotlinx.android.synthetic.main.activity_property_animation.*
 
 class PropertyAnimationActivity : AppCompatActivity() {
+
+    var isVisibleTest = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_property_animation)
 
 
-        translationByValueAnimator(findViewById(R.id.image_view1))
 
-        translationWithInterpolator(findViewById(R.id.image_view2))
+        translationByValueAnimator(image_view1)
+        btn.setOnClickListener {
+            image_view1.isVisible = isVisibleTest
+            isVisibleTest = !isVisibleTest
+        }
 
-        startObjectAnimatorAnim(findViewById(R.id.image_view3))
-
-        combineAnimationByObject(findViewById(R.id.image_view4))
-
-        startObjectAnimatorAnimFrame(findViewById(R.id.image_view5))
     }
 
     /**
      * 平移动画实现 valueAnimation
      * */
-    private fun translationByValueAnimator(view: ImageView) {
+    private fun translationByValueAnimator(view: View) {
         val valueAnimator = ValueAnimator.ofFloat(-400f, 400f)
         valueAnimator.addUpdateListener { animation ->
             view.translationX = animation?.animatedValue as Float

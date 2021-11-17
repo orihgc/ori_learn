@@ -1,4 +1,4 @@
-package com.ori.coroutines_base_learn.core.dispatcher
+package com.example.coroutines_base_learn.core.dispatcher
 
 import kotlin.coroutines.AbstractCoroutineContextElement
 import kotlin.coroutines.Continuation

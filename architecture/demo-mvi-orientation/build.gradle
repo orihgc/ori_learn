@@ -62,4 +62,5 @@ dependencies {
     // SmartRefreshLayout
     implementation "com.scwang.smart:refresh-layout-kernel:$smart_refresh_version"
     implementation "com.scwang.smart:refresh-header-classics:$smart_refresh_version"
+    compileOnly 'com.android.tools.build:gradle:3.0.1'
 }

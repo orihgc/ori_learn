@@ -1,6 +1,6 @@
-package com.ori.coroutines_base_learn.core.coroutine
+package com.example.coroutines_base_learn.core.coroutine
 
-import com.ori.coroutines_base_learn.core.exception.CoroutineExceptionHandler
+import com.example.coroutines_base_learn.core.exception.CoroutineExceptionHandler
 import kotlin.coroutines.CoroutineContext
 
 class StandaloneCoroutine(context: CoroutineContext):AbstractCoroutine<Unit>(context) {

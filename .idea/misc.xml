@@ -4,10 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.2453125" />
+        <entry key="android_learn/aidl_learn/client/src/main/res/layout/activity_main.xml" value="0.26927083333333335" />
+        <entry key="android_learn/aidl_learn/server/src/main/res/layout/activity_main.xml" value="0.2552083333333333" />
         <entry key="android_learn/animation_learn/motion_layout_learn/src/main/res/layout/activity_main.xml" value="0.4088541666666667" />
         <entry key="android_learn/animation_learn/motion_layout_learn/src/main/res/layout/activity_sence.xml" value="0.2351851851851852" />
         <entry key="android_learn/animation_learn/motion_learn/src/main/res/layout/activity_main.xml" value="0.21666666666666667" />
+        <entry key="android_learn/animation_learn/src/main/res/layout/activity_property_animation.xml" value="0.4244791666666667" />
         <entry key="android_learn/image_learn/src/main/res/layout/activity_main.xml" value="0.3302083333333333" />
+        <entry key="android_learn/location_learn/src/main/res/layout/activity_main.xml" value="0.4036458333333333" />
         <entry key="android_learn/notification_learn/src/main/res/layout/activity_main.xml" value="0.20364583333333333" />
         <entry key="android_learn/notification_learn/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16041666666666668" />
         <entry key="android_learn/recycler_view_learn/src/main/res/layout/activity_main.xml" value="0.4036458333333333" />
@@ -15,6 +19,7 @@
         <entry key="android_learn/scroll_view_learn/src/main/res/layout/activity_main.xml" value="0.21233655486071631" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/item_page.xml" value="0.23020833333333332" />
+        <entry key="architecture/demo-mvi-orientation/src/main/res/layout/fragment_note_detail.xml" value="0.4036458333333333" />
       </map>
     </option>
   </component>

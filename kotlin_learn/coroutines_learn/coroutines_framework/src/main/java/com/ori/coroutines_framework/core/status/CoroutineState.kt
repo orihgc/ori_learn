@@ -1,4 +1,4 @@
-package com.ori.coroutines_base_learn.core.status
+package com.example.coroutines_base_learn.core.status
 
 sealed class CoroutineState {
     /**

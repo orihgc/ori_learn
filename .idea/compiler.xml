@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
+      <module name="ori_learn.android_learn.aidl_learn.client" target="1.8" />
+      <module name="ori_learn.android_learn.aidl_learn.server" target="1.8" />
       <module name="ori_learn.android_learn.animation_learn" target="1.8" />
       <module name="ori_learn.android_learn.animation_learn.motion_layout_learn" target="1.8" />
       <module name="ori_learn.android_learn.animation_learn.motion_learn" target="1.8" />

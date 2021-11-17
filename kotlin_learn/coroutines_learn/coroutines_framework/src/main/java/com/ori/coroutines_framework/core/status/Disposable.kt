@@ -1,7 +1,7 @@
-package com.ori.coroutines_base_learn.core.status
+package com.example.coroutines_base_learn.core.status
 
-import com.ori.coroutines_base_learn.Job
-import com.ori.coroutines_base_learn.OnCancel
+import com.example.coroutines_base_learn.Job
+import com.example.coroutines_base_learn.OnCancel
 
 interface Disposable {
     fun dispose()

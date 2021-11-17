@@ -1,10 +1,8 @@
-package com.ori.coroutines_base_learn
+package com.example.coroutines_base_learn
 
-import com.ori.coroutines_base_learn.core.cancel.suspendCancellableCoroutine
-import com.ori.coroutines_base_learn.core.dispatcher.Dispatchers
+import com.example.coroutines_base_learn.core.cancel.suspendCancellableCoroutine
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
-import kotlin.concurrent.thread
 import kotlin.coroutines.*
 
 

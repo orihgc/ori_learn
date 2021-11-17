@@ -1,15 +1,15 @@
-package com.ori.coroutines_base_learn.core.coroutine
+package com.example.coroutines_base_learn.core.coroutine
 
-import com.ori.coroutines_base_learn.CancellationException
-import com.ori.coroutines_base_learn.Job
-import com.ori.coroutines_base_learn.OnCancel
-import com.ori.coroutines_base_learn.OnComplete
-import com.ori.coroutines_base_learn.core.cancel.suspendCancellableCoroutine
-import com.ori.coroutines_base_learn.core.scope.CoroutineScope
-import com.ori.coroutines_base_learn.core.status.CancellationHandlerDisposable
-import com.ori.coroutines_base_learn.core.status.CompletionHandlerDisposable
-import com.ori.coroutines_base_learn.core.status.CoroutineState
-import com.ori.coroutines_base_learn.core.status.Disposable
+import com.example.coroutines_base_learn.CancellationException
+import com.example.coroutines_base_learn.Job
+import com.example.coroutines_base_learn.OnCancel
+import com.example.coroutines_base_learn.OnComplete
+import com.example.coroutines_base_learn.core.cancel.suspendCancellableCoroutine
+import com.example.coroutines_base_learn.core.scope.CoroutineScope
+import com.example.coroutines_base_learn.core.status.CancellationHandlerDisposable
+import com.example.coroutines_base_learn.core.status.CompletionHandlerDisposable
+import com.example.coroutines_base_learn.core.status.CoroutineState
+import com.example.coroutines_base_learn.core.status.Disposable
 import java.lang.IllegalStateException
 import java.util.concurrent.atomic.AtomicReference
 import kotlin.coroutines.*

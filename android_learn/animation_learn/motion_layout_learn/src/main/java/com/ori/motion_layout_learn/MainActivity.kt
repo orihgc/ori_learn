@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
     private var isR=false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sence)
+        setContentView(com.example.motion_layout_learn.R.layout.activity_sence)
         btn.setOnClickListener {
             if (isR){
                 motionLayout.transitionToStart()
