@@ -22,7 +22,6 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven { url 'http://maven.byted.org/repository/android_public/' }
     }
 }
 

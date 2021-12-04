@@ -12,6 +12,7 @@
       <module name="ori_learn.android_learn.image_learn" target="1.8" />
       <module name="ori_learn.android_learn.jetpack_learn" target="1.8" />
       <module name="ori_learn.android_learn.location_learn" target="1.8" />
+      <module name="ori_learn.android_learn.network_learn" target="1.8" />
       <module name="ori_learn.android_learn.notification_learn" target="1.8" />
       <module name="ori_learn.android_learn.recycler_view_learn" target="1.8" />
       <module name="ori_learn.android_learn.scroll_view_learn" target="1.8" />
