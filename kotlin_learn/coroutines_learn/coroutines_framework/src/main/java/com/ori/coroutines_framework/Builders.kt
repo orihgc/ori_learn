@@ -1,8 +1,10 @@
-package com.example.coroutines_base_learn
+package com.ori.coroutines_framework
 
+import com.example.coroutines_base_learn.Deferred
+import com.example.coroutines_base_learn.Job
 import com.example.coroutines_base_learn.core.context.CoroutineName
-import com.example.coroutines_base_learn.core.coroutine.DeferredCoroutine
-import com.example.coroutines_base_learn.core.coroutine.StandaloneCoroutine
+import com.ori.coroutines_framework.core.coroutine.DeferredCoroutine
+import com.ori.coroutines_framework.core.coroutine.StandaloneCoroutine
 import com.example.coroutines_base_learn.core.dispatcher.Dispatchers
 import com.example.coroutines_base_learn.core.scope.CoroutineScope
 import java.util.concurrent.atomic.AtomicInteger

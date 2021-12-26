@@ -13,16 +13,21 @@
         <entry key="android_learn/animation_learn/motion_layout_learn/src/main/res/layout/activity_main.xml" value="0.4088541666666667" />
         <entry key="android_learn/animation_learn/motion_layout_learn/src/main/res/layout/activity_sence.xml" value="0.2351851851851852" />
         <entry key="android_learn/animation_learn/motion_learn/src/main/res/layout/activity_main.xml" value="0.21666666666666667" />
-        <entry key="android_learn/animation_learn/src/main/res/layout/activity_property_animation.xml" value="0.4244791666666667" />
+        <entry key="android_learn/animation_learn/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="android_learn/animation_learn/src/main/res/layout/activity_property_animation.xml" value="0.1" />
         <entry key="android_learn/image_learn/src/main/res/layout/activity_main.xml" value="0.3302083333333333" />
         <entry key="android_learn/location_learn/src/main/res/layout/activity_main.xml" value="0.4036458333333333" />
+        <entry key="android_learn/location_learn/src/main/res/layout/activity_main2.xml" value="0.4036458333333333" />
         <entry key="android_learn/notification_learn/src/main/res/layout/activity_main.xml" value="0.20364583333333333" />
         <entry key="android_learn/notification_learn/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16041666666666668" />
-        <entry key="android_learn/recycler_view_learn/src/main/res/layout/activity_main.xml" value="0.4036458333333333" />
+        <entry key="android_learn/recycler_view_learn/src/main/res/layout/activity_main.xml" value="0.12844036697247707" />
         <entry key="android_learn/recycler_view_learn/src/main/res/layout/item.xml" value="0.4036458333333333" />
+        <entry key="android_learn/recycler_view_learn/src/main/res/layout/plugin_rtc_widget_resolution_item.xml" value="0.3890625" />
+        <entry key="android_learn/recycler_view_learn/src/main/res/layout/plugin_rtc_widget_resolution_selection.xml" value="0.3890625" />
         <entry key="android_learn/scroll_view_learn/src/main/res/layout/activity_main.xml" value="0.21233655486071631" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/item_page.xml" value="0.23020833333333332" />
+        <entry key="architecture/demo-mvi-orientation/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="architecture/demo-mvi-orientation/src/main/res/layout/fragment_note_detail.xml" value="0.4036458333333333" />
       </map>
     </option>

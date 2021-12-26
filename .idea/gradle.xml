@@ -39,12 +39,15 @@
             <option value="$PROJECT_DIR$/kotlin_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/base_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn" />
+            <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/channel" />
+            <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_framework" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/coroutines_practice" />
             <option value="$PROJECT_DIR$/kotlin_learn/coroutines_learn/flow" />
             <option value="$PROJECT_DIR$/kotlin_learn/okhttp_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/retrofit_learn" />
             <option value="$PROJECT_DIR$/kotlin_learn/rxjava_learn" />
+            <option value="$PROJECT_DIR$/kotlin_learn/state_learn" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

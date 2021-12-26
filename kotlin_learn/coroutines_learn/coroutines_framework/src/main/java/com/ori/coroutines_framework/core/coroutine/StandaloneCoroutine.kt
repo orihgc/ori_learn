@@ -1,9 +1,10 @@
-package com.example.coroutines_base_learn.core.coroutine
+package com.ori.coroutines_framework.core.coroutine
 
+import com.example.coroutines_base_learn.core.coroutine.AbstractCoroutine
 import com.example.coroutines_base_learn.core.exception.CoroutineExceptionHandler
 import kotlin.coroutines.CoroutineContext
 
-class StandaloneCoroutine(context: CoroutineContext):AbstractCoroutine<Unit>(context) {
+class StandaloneCoroutine(context: CoroutineContext): AbstractCoroutine<Unit>(context) {
 
     override fun handleJobException(e: Throwable): Boolean {
         super.handleJobException(e)

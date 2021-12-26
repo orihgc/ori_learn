@@ -1,18 +1,14 @@
-package com.ori.rxjava_learn
+package com.ori.rxjava_learn.observable
 
 import io.reactivex.Observable
 import io.reactivex.ObservableOnSubscribe
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Action
 import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.PublishSubject
 import java.util.concurrent.TimeUnit
 
-fun main() {
-    hotToClodWithShare()
-}
 
 fun baseCase() {
     val observable = Observable.create(ObservableOnSubscribe<Int> {
@@ -31,19 +27,9 @@ fun baseCase() {
         it.onNext(3)
         it.onComplete()
     })
-    val observer = object : Observer<Int> {
-
-
-        override fun onSubscribe(d: Disposable) {
-        }
-
-        override fun onNext(t: Int) {
-        }
-
-        override fun onError(e: Throwable) {
-        }
-
-        override fun onComplete() {
+    val observer = object : Consumer<Int> {
+        override fun accept(t: Int?) {
+            TODO("Not yet implemented")
         }
 
     }
@@ -111,6 +97,7 @@ fun coldConsume() {
 
 /**
  * 热流publish
+ * publish把冷流转为热流
  * */
 fun hotPublishStream() {
     /**
@@ -124,11 +111,12 @@ fun hotPublishStream() {
     }).publish()
     observable.connect()
 
+    Thread.sleep(50)
     observable.subscribe {
         println(it)
     }
 
-    Thread.sleep(5000)
+    Thread.sleep(500)
     observable.subscribe {
         println(it)
     }
@@ -207,6 +195,7 @@ fun hotToColdStream() {
     println("重新开始数据流*************************")
 
     observable.subscribe(consumer1)
+    Thread.sleep(50)
     observable.subscribe(consumer2)
 
     Thread.sleep(100)
@@ -216,7 +205,7 @@ fun hotToColdStream() {
 /**
  * share操作符封装了 publish().refCount();
  * */
-fun hotToClodWithShare(){
+fun hotToClodWithShare() {
     val observable = Observable.create(ObservableOnSubscribe<Long> { emitter ->
         Observable.interval(10, TimeUnit.MILLISECONDS, Schedulers.computation())
             .take(Long.MAX_VALUE).subscribe {
@@ -239,7 +228,15 @@ fun hotToClodWithShare(){
     println("重新开始数据流*************************")
 
     observable.subscribe(consumer1)
+    Thread.sleep(50)
     observable.subscribe(consumer2)
 
     Thread.sleep(100)
+}
+
+fun main() {
+    Observable.timer(2,TimeUnit.SECONDS).subscribe({
+        print("ori")
+    })
+    Thread.sleep(10000)
 }

@@ -1,30 +1,62 @@
 package com.ori.animation_learn
 
 import android.animation.*
+import android.content.res.ColorStateList
+import android.graphics.Color
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.animation.*
 import android.widget.ImageView
-import androidx.core.view.isVisible
+import androidx.annotation.RequiresApi
+import androidx.core.animation.addListener
 import kotlinx.android.synthetic.main.activity_property_animation.*
 
 class PropertyAnimationActivity : AppCompatActivity() {
 
     var isVisibleTest = true
 
+
+    companion object {
+        private const val ANIMATION_DURATION = 4000L
+        private const val ZERO_FLOAT = 0F
+        private const val ONE_FLOAT = 1F
+    }
+
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_property_animation)
-
-
-
-        translationByValueAnimator(image_view1)
         btn.setOnClickListener {
-            image_view1.isVisible = isVisibleTest
-            isVisibleTest = !isVisibleTest
+            view_test.backgroundTintList= ColorStateList.valueOf(Color.RED)
         }
+    }
 
+
+    private var animatorSet: AnimatorSet = AnimatorSet()
+
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+    private fun scale(view: View, isEnlarge: Boolean) {
+        val startValue = if (isEnlarge) ZERO_FLOAT else ONE_FLOAT
+        val endValue = if (isEnlarge) ONE_FLOAT else ZERO_FLOAT
+        val xScaleAnimator =
+            ObjectAnimator.ofFloat(view, "scaleX", startValue, endValue)
+        val yScaleAnimator =
+            ObjectAnimator.ofFloat(view, "scaleY", startValue, endValue)
+        val alphaScaleAnimator =
+            ObjectAnimator.ofFloat(view, "alpha", startValue, endValue)
+        view.pivotX = view.width.div(2).toFloat()
+        view.pivotY = 0f
+        xScaleAnimator.duration = ANIMATION_DURATION
+        yScaleAnimator.duration = ANIMATION_DURATION
+        alphaScaleAnimator.duration = ANIMATION_DURATION
+        val pathInterpolator = PathInterpolator(0.3F, 1.3F, 0.3F, 1F)
+        xScaleAnimator.interpolator = pathInterpolator
+        yScaleAnimator.interpolator = pathInterpolator
+        alphaScaleAnimator.interpolator = pathInterpolator
+        animatorSet.playTogether(xScaleAnimator, yScaleAnimator, alphaScaleAnimator)
+        animatorSet.start()
     }
 
     /**
