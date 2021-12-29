@@ -1,19 +1,17 @@
 package com.ori.state_learn.fsm
 
-import com.ori.state_learn.fsm.context.DefaultStateContext
 import com.ori.state_learn.fsm.model.BaseEvent
-import com.ori.state_learn.fsm.model.BaseState
 import com.ori.state_learn.fsm.state.State
 import java.util.concurrent.atomic.AtomicBoolean
 
-class StateMachine(private val initialState: BaseState) {
+class StateMachine(private val initialState: State) {
 
     companion object {
         fun buildStateMachine(
-            initialStateName: BaseState,
+            initialState: State,
             init: StateMachine.() -> Unit
         ): StateMachine {
-            return StateMachine(initialStateName).apply(init)
+            return StateMachine(initialState).apply(init)
         }
     }
 
@@ -28,22 +26,19 @@ class StateMachine(private val initialState: BaseState) {
         }
     }
 
-    fun state(stateName: BaseState, init: State.() -> Unit): StateMachine =
-        state(State(stateName).apply(init))
-
-    fun state(state: State): StateMachine {
-        states.add(state)
+    fun addState(state: State, init: State.() -> Unit): StateMachine {
+        states.add(state.apply(init))
         return this
     }
 
-    private fun getState(stateType: BaseState): State =
-        states.firstOrNull { stateType.javaClass == it.name.javaClass }
+    fun getState(stateType: State): State =
+        states.firstOrNull { stateType.javaClass == it.javaClass }
             ?: throw NoSuchElementException("$stateType is not in state machine")
 
     private fun isCurrentStateInitialized() = ::currentState.isInitialized
 
     fun sendEvent(event: BaseEvent) {
-        val transition = currentState.getTransitionForEvent(event)
+        val transition = currentState.getTransitionWithEvent(event)
         transition.transit()
         val guard = transition.guard?.invoke() ?: true
 
@@ -54,7 +49,7 @@ class StateMachine(private val initialState: BaseState) {
         }
     }
 
-    fun getCurrentState(): BaseState = this.currentState.name
+    fun getCurrentState(): State = this.currentState
 
 
 }

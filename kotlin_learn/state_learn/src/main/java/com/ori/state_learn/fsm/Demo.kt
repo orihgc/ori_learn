@@ -1,18 +1,19 @@
 package com.ori.state_learn.fsm
 
 import com.ori.state_learn.fsm.model.BaseEvent
-import com.ori.state_learn.fsm.model.BaseState
+import com.ori.state_learn.fsm.state.State
 
 class Cook : BaseEvent()      // 烧菜
 class WashDishes : BaseEvent() // 洗碗
 
-class Initial : BaseState()   // 初始化状态
-class Eat : BaseState()       // 吃饭状态
-class WatchTV : BaseState()   // 看电视状态
+class Initial : State()   // 初始化状态
+class Eat : State()       // 吃饭状态
+class WatchTV : State()   // 看电视状态
 
 fun main() {
+    val state = Initial()
     val stateMachine = StateMachine.buildStateMachine(Initial()) {
-        state(Initial()) {
+        addState(state) {
             action { println("Entered [$it] State") }
             transition(Cook(), Eat()) {
                 action {
@@ -24,7 +25,7 @@ fun main() {
             }
         }
 
-        state(Eat()) {
+        addState(Eat()) {
             action {
                 println("Entered[$it] State")
             }
@@ -38,7 +39,7 @@ fun main() {
             }
         }
 
-        state(WatchTV()) {
+        addState(WatchTV()) {
             action {
                 println("Entered [$it] State")
             }
@@ -48,4 +49,6 @@ fun main() {
     stateMachine.init()
     stateMachine.sendEvent(Cook())
     stateMachine.sendEvent(WashDishes())
+    stateMachine.getState(state)
+    println()
 }

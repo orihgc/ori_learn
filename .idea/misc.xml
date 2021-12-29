@@ -25,6 +25,8 @@
         <entry key="android_learn/recycler_view_learn/src/main/res/layout/plugin_rtc_widget_resolution_item.xml" value="0.3890625" />
         <entry key="android_learn/recycler_view_learn/src/main/res/layout/plugin_rtc_widget_resolution_selection.xml" value="0.3890625" />
         <entry key="android_learn/scroll_view_learn/src/main/res/layout/activity_main.xml" value="0.21233655486071631" />
+        <entry key="android_learn/state_machine/src/main/res/drawable/ic_launcher_background.xml" value="0.325" />
+        <entry key="android_learn/state_machine/src/main/res/layout/activity_main.xml" value="0.375" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
         <entry key="android_learn/view_pager_learn/src/main/res/layout/item_page.xml" value="0.23020833333333332" />
         <entry key="architecture/demo-mvi-orientation/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />

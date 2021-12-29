@@ -1,16 +1,13 @@
 package com.ori.state_learn.fsm.transition
 
-import com.ori.state_learn.fsm.context.StateContext
 import com.ori.state_learn.fsm.model.BaseEvent
-import com.ori.state_learn.fsm.model.BaseState
 import com.ori.state_learn.fsm.model.Guard
 import com.ori.state_learn.fsm.model.TransitionAction
 import com.ori.state_learn.fsm.state.State
 
 class Transition(
     val event: BaseEvent,
-    val sourceState: BaseState,
-    val targetState: BaseState,
+    val targetState: State,
 ) {
 
     private val actions = mutableListOf<TransitionAction>()

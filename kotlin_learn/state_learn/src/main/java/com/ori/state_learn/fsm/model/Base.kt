@@ -3,8 +3,6 @@ package com.ori.state_learn.fsm.model
 
 abstract class BaseEvent : Base()
 
-abstract class BaseState : Base()
-
 abstract class Base {
 
     override fun equals(other: Any?): Boolean {

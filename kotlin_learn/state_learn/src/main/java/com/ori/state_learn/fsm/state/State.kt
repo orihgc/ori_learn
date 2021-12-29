@@ -2,19 +2,18 @@ package com.ori.state_learn.fsm.state
 
 import com.ori.state_learn.fsm.exception.StateMachineException
 import com.ori.state_learn.fsm.model.BaseEvent
-import com.ori.state_learn.fsm.model.BaseState
 import com.ori.state_learn.fsm.model.StateAction
 import com.ori.state_learn.fsm.transition.Transition
 import java.lang.IllegalStateException
 
-class State(val name: BaseState) {
+open class State {
 
     private val stateActions = mutableListOf<StateAction>()
     private val transitions = hashMapOf<BaseEvent, Transition>()
 
-    fun transition(event: BaseEvent, targetState: BaseState, init: Transition.() -> Unit): State {
+    fun transition(event: BaseEvent, targetState: State, init: Transition.() -> Unit): State {
 
-        val transition = Transition(event, this.name, targetState)
+        val transition = Transition(event, targetState)
         transition.init()
 
         if (transitions.containsKey(event)) {
@@ -24,9 +23,9 @@ class State(val name: BaseState) {
         return this
     }
 
-    fun getTransitionForEvent(event: BaseEvent): Transition {
+    fun getTransitionWithEvent(event: BaseEvent): Transition {
         return transitions[event]
-            ?: throw IllegalStateException("Event $event isn't registered with state ${this.name}")
+            ?: throw IllegalStateException("Event $event isn't registered with state $this")
     }
 
 
@@ -40,5 +39,5 @@ class State(val name: BaseState) {
         }
     }
 
-    override fun toString(): String = name.javaClass.simpleName
+    override fun toString(): String = this.javaClass.simpleName
 }
