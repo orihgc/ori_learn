@@ -8,6 +8,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val hsm = HSM("rtc")
-        hsm.transitionTo(hsm.p2)
+        hsm.sendMessage(HSM.MSG_P0_P1)
     }
 }

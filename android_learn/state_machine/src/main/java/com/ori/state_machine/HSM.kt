@@ -57,6 +57,8 @@ class HSM constructor(name: String?) : StateMachine(name) {
     internal inner class S2 : State() {
         override fun enter() {
             Log.d(TAG, "enter S2")
+            Log.d(TAG,"current ${currentState.name}")
+            deferMessage(obtainMessage(MSG_P1_P2))
         }
 
         override fun exit() {
