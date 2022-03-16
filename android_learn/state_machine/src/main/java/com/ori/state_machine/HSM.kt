@@ -102,6 +102,7 @@ class HSM constructor(name: String?) : StateMachine(name) {
         }
 
         override fun processMessage(msg: Message?): Boolean {
+            Log.d(TAG, "processMessage P1")
             return when (msg?.what) {
                 MSG_P1_P2 -> {
                     transitionTo(p2)

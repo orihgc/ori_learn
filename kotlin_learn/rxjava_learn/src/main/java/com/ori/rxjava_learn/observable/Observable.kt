@@ -8,6 +8,7 @@ import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.PublishSubject
 import java.util.concurrent.TimeUnit
+import kotlin.concurrent.thread
 
 
 fun baseCase() {
@@ -33,7 +34,9 @@ fun baseCase() {
         }
 
     }
-    observable.subscribe(observer)
+    observable.map {
+        println(it)
+    }
 }
 
 /**
@@ -235,8 +238,30 @@ fun hotToClodWithShare() {
 }
 
 fun main() {
-    Observable.timer(2,TimeUnit.SECONDS).subscribe({
-        print("ori")
-    })
-    Thread.sleep(10000)
+    var count: Int = 0
+    Observable.create(ObservableOnSubscribe<String> { emitter ->
+        count++
+        println("onCreate:  创造数字$count")
+        emitter?.onNext("$count")
+    }).flatMap {
+        if (it.toInt() < 5) {
+            Observable.error(Exception())
+        } else {
+            Observable.just(it)
+        }
+    }.retryWhen {
+        it.flatMap { throwable ->
+            if (count < 2) {
+                Observable.timer(2, TimeUnit.SECONDS)
+            } else {
+                Observable.error(throwable)
+            }
+        }
+    }
+        .subscribe({
+            println("subscribe: $it")
+        }, {
+            println("subscribe: $it")
+        })
+    Thread.sleep(100000)
 }

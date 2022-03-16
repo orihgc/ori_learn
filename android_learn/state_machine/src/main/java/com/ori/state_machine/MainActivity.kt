@@ -1,7 +1,7 @@
 package com.ori.state_machine
 
+import android.os.*
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -445,10 +445,6 @@ public class StateMachine {
      */
     public static final boolean NOT_HANDLED = false;
 
-    public StateMachine() {
-
-    }
-
     /**
      * StateMachine logging record.
      * {@hide}
@@ -774,7 +770,7 @@ public class StateMachine {
         private class HaltingState extends State {
             @Override
             public boolean processMessage(Message msg) {
-                mSm.haltedProcessMessage(msg);
+                mSm. haltedProcessMessage(msg);
                 return true;
             }
         }
@@ -789,6 +785,11 @@ public class StateMachine {
             }
         }
 
+        public final boolean isStateActive(State state){
+            StateInfo stateInfo = mStateInfo.get(state);
+            assert stateInfo != null;
+            return stateInfo.active;
+        }
         /**
          * Handle messages sent to the state machine by calling
          * the current state's processMessage. It also handles

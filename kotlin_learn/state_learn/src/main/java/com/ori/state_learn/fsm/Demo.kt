@@ -2,6 +2,7 @@ package com.ori.state_learn.fsm
 
 import com.ori.state_learn.fsm.model.BaseEvent
 import com.ori.state_learn.fsm.state.State
+import kotlin.concurrent.thread
 
 class Cook : BaseEvent()      // 烧菜
 class WashDishes : BaseEvent() // 洗碗
@@ -49,6 +50,9 @@ fun main() {
     stateMachine.init()
     stateMachine.sendEvent(Cook())
     stateMachine.sendEvent(WashDishes())
+    thread {
+        stateMachine.sendEvent(Cook())
+    }
     stateMachine.getState(state)
     println()
 }

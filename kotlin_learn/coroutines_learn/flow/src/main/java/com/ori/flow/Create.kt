@@ -3,6 +3,7 @@ package com.ori.flow
 import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.*
 
 
 /**
@@ -19,5 +20,9 @@ fun createFlow(){
 }
 
 fun main() {
+    val flow = flow<Int> {
+        delay(100)
+        emit(1)
+    }
 
 }

@@ -26,8 +26,10 @@
             <option value="$PROJECT_DIR$/android_learn/location_learn" />
             <option value="$PROJECT_DIR$/android_learn/network_learn" />
             <option value="$PROJECT_DIR$/android_learn/notification_learn" />
+            <option value="$PROJECT_DIR$/android_learn/permission_learn" />
             <option value="$PROJECT_DIR$/android_learn/recycler_view_learn" />
             <option value="$PROJECT_DIR$/android_learn/scroll_view_learn" />
+            <option value="$PROJECT_DIR$/android_learn/service_learn" />
             <option value="$PROJECT_DIR$/android_learn/state_machine" />
             <option value="$PROJECT_DIR$/android_learn/view_pager_learn" />
             <option value="$PROJECT_DIR$/architecture" />
