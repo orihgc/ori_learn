@@ -1,4 +1,12 @@
 package com.ori.state_learn
 
-class MyClass {
+fun main() {
+    val myClass = MyClass()
+    println(myClass)
+}
+
+class MyClass{
+    override fun toString(): String {
+        return javaClass.name.toString()
+    }
 }
