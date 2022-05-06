@@ -12,6 +12,7 @@
       <module name="ori_learn.android_learn.fragment_learn" target="1.8" />
       <module name="ori_learn.android_learn.hook_activity" target="1.8" />
       <module name="ori_learn.android_learn.image_learn" target="1.8" />
+      <module name="ori_learn.android_learn.immersive_learn" target="1.8" />
       <module name="ori_learn.android_learn.ioc_learn" target="1.8" />
       <module name="ori_learn.android_learn.jetpack_learn" target="1.8" />
       <module name="ori_learn.android_learn.location_learn" target="1.8" />
