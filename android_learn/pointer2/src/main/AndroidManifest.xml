@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ori.service_learn">
-
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    package="com.ori.pointer2">
 
     <application
         android:allowBackup="true"
@@ -11,22 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ori_learn">
-        <activity
-            android:name=".fore.ForeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".bind.MainActivity2"
-            android:exported="true" />
-
-        <service
-            android:name=".bind.MyService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <service android:name=".fore.ForeService"
-            android:enabled="true"
-            android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

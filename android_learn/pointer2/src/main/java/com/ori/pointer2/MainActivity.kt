@@ -1,14 +1,13 @@
-package com.ori.service_learn
+package com.ori.pointer2
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ori.service_learn.fore.ForeActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        startActivity(Intent(this, ForeActivity::class.java))
+        piv.setImageResource(R.drawable.test)
     }
 }

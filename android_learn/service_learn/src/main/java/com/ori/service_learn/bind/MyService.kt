@@ -1,4 +1,4 @@
-package com.ori.service_learn
+package com.ori.service_learn.bind
 
 import android.app.Service
 import android.content.Intent
@@ -32,11 +32,10 @@ class MyService : Service() {
         return super.onStartCommand(intent, flags, startId)
     }
 
-    override fun onBind(intent: Intent): IBinder? {
+    override fun onBind(intent: Intent): IBinder {
         Log.d(TAG,"onBind")
         return binder
     }
-
     override fun onUnbind(intent: Intent?): Boolean {
         Log.d(TAG,"onUnbind")
         return super.onUnbind(intent)

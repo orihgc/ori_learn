@@ -19,6 +19,7 @@
       <module name="ori_learn.android_learn.network_learn" target="1.8" />
       <module name="ori_learn.android_learn.notification_learn" target="1.8" />
       <module name="ori_learn.android_learn.permission_learn" target="1.8" />
+      <module name="ori_learn.android_learn.pointer2" target="1.8" />
       <module name="ori_learn.android_learn.recycler_view_learn" target="1.8" />
       <module name="ori_learn.android_learn.scroll_view_learn" target="1.8" />
       <module name="ori_learn.android_learn.service_learn" target="1.8" />
