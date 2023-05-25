@@ -27,6 +27,7 @@
             <option value="$PROJECT_DIR$/android_learn/immersive_learn" />
             <option value="$PROJECT_DIR$/android_learn/ioc_learn" />
             <option value="$PROJECT_DIR$/android_learn/jetpack_learn" />
+            <option value="$PROJECT_DIR$/android_learn/jni_learn" />
             <option value="$PROJECT_DIR$/android_learn/location_learn" />
             <option value="$PROJECT_DIR$/android_learn/network_learn" />
             <option value="$PROJECT_DIR$/android_learn/notification_learn" />
@@ -58,7 +59,6 @@
             <option value="$PROJECT_DIR$/kotlin_learn/state_learn" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

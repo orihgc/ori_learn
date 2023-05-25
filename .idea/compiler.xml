@@ -15,6 +15,7 @@
       <module name="ori_learn.android_learn.immersive_learn" target="1.8" />
       <module name="ori_learn.android_learn.ioc_learn" target="1.8" />
       <module name="ori_learn.android_learn.jetpack_learn" target="1.8" />
+      <module name="ori_learn.android_learn.jni_learn" target="1.8" />
       <module name="ori_learn.android_learn.location_learn" target="1.8" />
       <module name="ori_learn.android_learn.network_learn" target="1.8" />
       <module name="ori_learn.android_learn.notification_learn" target="1.8" />
@@ -30,6 +31,8 @@
       <module name="ori_learn.architecture.demo-mvp" target="1.8" />
       <module name="ori_learn.architecture.demo-mvvm" target="1.8" />
       <module name="ori_learn.kotlin_learn.rxjava_learn" target="1.8" />
+      <module name="ori_learn.kotlin_learn.rxjava_learn.main" target="1.8" />
+      <module name="ori_learn.kotlin_learn.rxjava_learn.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
