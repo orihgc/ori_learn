@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">messenger_learn</string>
+    <string name="btn_send_msg">发送</string>
+</resources>
