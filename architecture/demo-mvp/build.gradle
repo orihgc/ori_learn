@@ -41,7 +41,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     implementation 'com.h.edu.common:hfragment:1.0.1-alpha.6'
-    implementation 'com.kongming.parent.module.commonui:ehp_ui_components:0.0.1-alpha.44'
 
     implementation 'io.reactivex.rxjava2:rxjava:2.2.18'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'

@@ -4,8 +4,17 @@ package com.ori.base_learn
 import kotlin.reflect.KProperty
 
 fun main() {
-    val apiImpl = ApiImpl(100)
-    ApiDelegate(apiImpl).print()
+    register(Child::class.java)
+}
+
+open class Base{}
+class Child: Base() {}
+
+fun <T> register(clazz: Class<out T>){
+    if (Base::class.java.isAssignableFrom(clazz)){
+        val clazz1 = clazz as? Class<out Base>
+        println("111")
+    }
 }
 
 /**

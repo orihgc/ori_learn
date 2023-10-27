@@ -43,7 +43,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     implementation 'com.h.edu.common:hfragment:1.0.1-alpha.6'
-    implementation 'com.kongming.parent.module.commonui:ehp_ui_components:0.0.1-alpha.44'
 
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.3'
 
