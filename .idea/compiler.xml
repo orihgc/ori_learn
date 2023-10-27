@@ -2,34 +2,36 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="ori_learn.android_learn.aidl_learn.client" target="1.8" />
-      <module name="ori_learn.android_learn.aidl_learn.server" target="1.8" />
-      <module name="ori_learn.android_learn.animation_learn" target="1.8" />
-      <module name="ori_learn.android_learn.animation_learn.motion_layout_learn" target="1.8" />
-      <module name="ori_learn.android_learn.animation_learn.motion_learn" target="1.8" />
-      <module name="ori_learn.android_learn.aspectj_learn" target="1.8" />
-      <module name="ori_learn.android_learn.dialog_learn" target="1.8" />
-      <module name="ori_learn.android_learn.fragment_learn" target="1.8" />
-      <module name="ori_learn.android_learn.hook_activity" target="1.8" />
-      <module name="ori_learn.android_learn.image_learn" target="1.8" />
-      <module name="ori_learn.android_learn.immersive_learn" target="1.8" />
-      <module name="ori_learn.android_learn.ioc_learn" target="1.8" />
-      <module name="ori_learn.android_learn.jetpack_learn" target="1.8" />
-      <module name="ori_learn.android_learn.location_learn" target="1.8" />
-      <module name="ori_learn.android_learn.network_learn" target="1.8" />
-      <module name="ori_learn.android_learn.notification_learn" target="1.8" />
-      <module name="ori_learn.android_learn.permission_learn" target="1.8" />
-      <module name="ori_learn.android_learn.pointer2" target="1.8" />
-      <module name="ori_learn.android_learn.recycler_view_learn" target="1.8" />
-      <module name="ori_learn.android_learn.scroll_view_learn" target="1.8" />
-      <module name="ori_learn.android_learn.service_learn" target="1.8" />
-      <module name="ori_learn.android_learn.state_machine" target="1.8" />
-      <module name="ori_learn.android_learn.view_pager_learn" target="1.8" />
+      <module name="ori_learn.android_learn.aidl_learn.client" target="11" />
+      <module name="ori_learn.android_learn.aidl_learn.server" target="11" />
+      <module name="ori_learn.android_learn.animation_learn" target="11" />
+      <module name="ori_learn.android_learn.animation_learn.motion_layout_learn" target="11" />
+      <module name="ori_learn.android_learn.animation_learn.motion_learn" target="11" />
+      <module name="ori_learn.android_learn.aspectj_learn" target="11" />
+      <module name="ori_learn.android_learn.dialog_learn" target="11" />
+      <module name="ori_learn.android_learn.fragment_learn" target="11" />
+      <module name="ori_learn.android_learn.hook_activity" target="11" />
+      <module name="ori_learn.android_learn.image_learn" target="11" />
+      <module name="ori_learn.android_learn.immersive_learn" target="11" />
+      <module name="ori_learn.android_learn.ioc_learn" target="11" />
+      <module name="ori_learn.android_learn.jetpack_learn" target="11" />
+      <module name="ori_learn.android_learn.location_learn" target="11" />
+      <module name="ori_learn.android_learn.network_learn" target="11" />
+      <module name="ori_learn.android_learn.notification_learn" target="11" />
+      <module name="ori_learn.android_learn.permission_learn" target="11" />
+      <module name="ori_learn.android_learn.pointer2" target="11" />
+      <module name="ori_learn.android_learn.recycler_view_learn" target="11" />
+      <module name="ori_learn.android_learn.scroll_view_learn" target="11" />
+      <module name="ori_learn.android_learn.service_learn" target="11" />
+      <module name="ori_learn.android_learn.state_machine" target="11" />
+      <module name="ori_learn.android_learn.view_pager_learn" target="11" />
       <module name="ori_learn.app" target="1.8" />
-      <module name="ori_learn.architecture.demo-mvi-orientation" target="1.8" />
-      <module name="ori_learn.architecture.demo-mvp" target="1.8" />
-      <module name="ori_learn.architecture.demo-mvvm" target="1.8" />
+      <module name="ori_learn.architecture.demo-mvi-orientation" target="11" />
+      <module name="ori_learn.architecture.demo-mvp" target="11" />
+      <module name="ori_learn.architecture.demo-mvvm" target="11" />
       <module name="ori_learn.kotlin_learn.rxjava_learn" target="1.8" />
+      <module name="ori_learn.kotlin_learn.rxjava_learn.main" target="1.8" />
+      <module name="ori_learn.kotlin_learn.rxjava_learn.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
