@@ -11,5 +11,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = MainActivityLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val jniTest = JniTest()
+        binding.tvTest.text = JavaJniTest.stringFromJNI()
+    }
+
+    external fun stringFromJNI(): String
+
+
+    companion object {
+        init {
+            System.loadLibrary("jni_learn")
+        }
     }
 }
