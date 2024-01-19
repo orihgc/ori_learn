@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="groundStroke" format="dimension" />
+    <attr name="groundRadius" format="dimension" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="backgroundStrokeColor" format="color" />
+
+    <item name="widgetLayoutViewIndexType" type="id" />
+    <item name="widgetLayoutViewIndex" type="id" />
+
+</resources>

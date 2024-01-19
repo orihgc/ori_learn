@@ -4,13 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <CheckBox
-        android:id="@+id/checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ori.choice_set.layout.WrapLayout
+        android:id="@+id/wl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:itemMarginHorizontal="12dp"
+        app:itemMarginVertical="8dp">
+
+    </com.ori.choice_set.layout.WrapLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
