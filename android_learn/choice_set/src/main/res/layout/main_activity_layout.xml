@@ -5,14 +5,15 @@
     android:layout_height="match_parent">
 
 
-    <com.ori.choice_set.layout.WrapLayout
-        android:id="@+id/wl_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:itemMarginHorizontal="12dp"
-        app:itemMarginVertical="8dp">
-
-    </com.ori.choice_set.layout.WrapLayout>
-
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="44dp"
+        android:layout_height="24dp"
+        android:thumb="@drawable/switch_common_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:switchMinWidth="44dp"
+        app:track="@drawable/switch_common_track" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

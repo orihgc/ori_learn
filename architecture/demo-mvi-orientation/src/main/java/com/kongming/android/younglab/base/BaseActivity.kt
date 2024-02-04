@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
 
 abstract class BaseActivity : AppCompatActivity() {
 
@@ -33,6 +34,7 @@ abstract class BaseActivity : AppCompatActivity() {
         msg?.let {
             Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
         }
+        Lifecycle.State.CREATED
     }
 
     fun showToast(id: Int) {
