@@ -23,6 +23,7 @@ allprojects {
     repositories {
         maven { url 'https://maven.byted.org/repository/android_public' }
         google()
+        maven { url 'https://jitpack.io' }
     }
 }
 

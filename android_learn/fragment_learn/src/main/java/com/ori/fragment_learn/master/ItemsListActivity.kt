@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
 import androidx.fragment.app.FragmentActivity
-import com.example.fragment_learn.R
+import com.ori.fragment_learn.R
 
 class ItemsListActivity : FragmentActivity(), ItemsListFragment.OnItemSelectedListener {
     private var isTwoPane = false

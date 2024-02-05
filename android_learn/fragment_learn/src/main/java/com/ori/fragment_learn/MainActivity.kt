@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import com.example.fragment_learn.R
 import com.ori.fragment_learn.fragment.Fragment1
 import com.ori.fragment_learn.master.ItemsListActivity
 

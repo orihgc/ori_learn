@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.fragment_learn.R
+import com.ori.fragment_learn.R
 
 class Fragment1 : Fragment() {
     companion object {
