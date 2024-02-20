@@ -2,9 +2,9 @@ package com.ori.assem
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.bytedance.assem.arch.extensions.assemble
-import com.ori.assem.base.TaskContentAssem
 import com.ori.assem.databinding.MainActivityBinding
+import com.ori.assem.powerlist.CommentItem
+import com.ori.assem.powerlist.assem.CommentCell
 
 /**
  * Created by huangguocheng on 2024/2/20
@@ -18,16 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        assemble {
+        binding.powerList.registerCells(CommentCell::class.java)
 
-//            uiContentAssem {
-//                type = TaskAddFloatingAssem::class
-//                contentViewId = R.id.container
-//            }
-            uiSlotAssem {
-                type = TaskContentAssem::class
-                slotLayoutId = R.id.container
-            }
+        for (i in 0..100) {
+            binding.powerList.state.add(CommentItem(i, false, "ori$i"))
         }
     }
 }

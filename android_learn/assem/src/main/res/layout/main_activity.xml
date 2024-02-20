@@ -5,12 +5,9 @@
     android:layout_height="match_parent"
     tools:context="com.ori.assem.MainActivity">
 
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:background="@color/purple_500"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center" />
+    <com.bytedance.ies.powerlist.PowerList
+        android:id="@+id/power_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </FrameLayout>

@@ -49,4 +49,6 @@ dependencies {
 
     implementation 'com.bytedance.ies:assem:33.6.0.0'
     implementation 'com.bytedance.ies.assem:viewmodel-rx:33.6.0.0'
+    implementation 'tiktok.powerlist:powerlist:33.6.0.0'
+    implementation 'com.bytedance.ies:assem-ext_powerlist:33.6.0.0'
 }
