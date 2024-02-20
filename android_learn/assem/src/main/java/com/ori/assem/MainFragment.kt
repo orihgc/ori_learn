@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.ori.assem.databinding.MainFragmentBinding
-import com.ori.assem.powerlist.CommentItem
-import com.ori.assem.powerlist.assem.CommentCell
+import com.ori.assem.reused.OriAdapter
+import com.ori.assem.reused.OriItem
 
 /**
  * Created by huangguocheng on 2024/2/20
@@ -25,9 +26,13 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.powerList.registerCells(CommentCell::class.java)
-        for (i in 0..100) {
-            binding.powerList.state.add(CommentItem(i, false, "$i"))
+        val dataSource = mutableListOf<OriItem>()
+        for (i in 0..20){
+            dataSource.add(OriItem(false, i))
+        }
+        binding.rvContainer.apply {
+            adapter = OriAdapter(dataSource, this@MainFragment)
+            layoutManager = LinearLayoutManager(requireContext())
         }
     }
 }

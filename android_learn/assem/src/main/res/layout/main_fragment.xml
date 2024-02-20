@@ -5,8 +5,13 @@
     android:layout_height="match_parent"
     tools:context="com.ori.assem.MainActivity">
 
-    <com.bytedance.ies.powerlist.PowerList
-        android:id="@+id/power_list"
+    <!--    <com.bytedance.ies.powerlist.PowerList-->
+    <!--        android:id="@+id/power_list"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
