@@ -8,7 +8,7 @@ import com.bytedance.ies.powerlist.data.PowerItem
  */
 data class CommentItem(
     val id: Int,
-    val enable: Boolean,
+    var enable: Boolean,
     val content: String
 ) : PowerItem{
 

@@ -5,10 +5,9 @@
     android:layout_height="match_parent"
     tools:context="com.ori.assem.MainActivity">
 
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fg_container"
+    <com.bytedance.ies.powerlist.PowerList
+        android:id="@+id/power_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </FrameLayout>
