@@ -10,6 +10,13 @@ import com.ori.recycler_view_learn.R
 
 class ResolutionAdapter(val data: MutableList<String>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    init {
+
+        registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
+
+        })
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.plugin_rtc_widget_resolution_item, parent, false)
         return ItemViewHolder(view)
